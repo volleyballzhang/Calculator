@@ -29,24 +29,24 @@ public class Controller {
 	public void tan(){
 	}
 	
-	public void log(a, b){
+	public void log(){
 	}
 	
-	public void power(a, b){
+	public void power(){
 	}
 	
-	public void root(a, b){
+	public void root(){
 	}
 	
-	public void factorial(a){
+	public void factorial(){
 	}
 	
-	public void ln(a, b){
+	public void ln(){
 	}
 	
 	//probably need a switcher between radians and degrees
 	
-	public void calculateFinalGrade(double finalPercent, double currentGrade){
+	public void calculateFinalGrade(){
 	}
 	
 	public void delete(){
