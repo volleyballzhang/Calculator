@@ -19,7 +19,7 @@ public class Main extends Application implements EventHandler<ActionEvent>{
 		try {
 			Parent scene = FXMLLoader.load(getClass().getResource("GUI.fxml"));
 			primaryStage.setTitle("Calculator");
-			primaryStage.setScene(new Scene(scene, 400, 400));
+			primaryStage.setScene(new Scene(scene, 400, 410));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -32,9 +32,7 @@ public class Main extends Application implements EventHandler<ActionEvent>{
 
 	@Override
 	public void handle(ActionEvent event) {
-		if(event.getSource() == b){
-			System.out.println("test");
-		}
+		// TODO Auto-generated method stub
 		
 	}
 }
