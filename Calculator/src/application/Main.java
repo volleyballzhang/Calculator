@@ -19,7 +19,7 @@ public class Main extends Application implements EventHandler<ActionEvent>{
 		try {
 			Parent scene = FXMLLoader.load(getClass().getResource("GUI.fxml"));
 			primaryStage.setTitle("Calculator");
-			primaryStage.setScene(new Scene(scene, 400, 410));
+			primaryStage.setScene(new Scene(scene, 500, 479));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
