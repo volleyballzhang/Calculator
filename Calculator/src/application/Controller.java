@@ -1,4 +1,4 @@
-package application;
+ 
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -95,15 +95,37 @@ public class Controller {
 	public void log(){
 		input.appendText("log(");
 	}
+	
+	public void logCalc() {
+	    double i = 0;
+	    Math.log(i);
+	}
+	
 	public void abs(){
 		input.appendText("abs(");
+	}
+	
+	public void absCalc() {
+	    double i = 0;
+	    if(i < 0) i *= -1;
+	    else i = i;
 	}
 	public void pi(){
 		input.appendText("π");
 	}
+	
+	public void piCalc() {
+	    double pi = 3.14159265359;
+	}
+	
 	public void e(){
 		input.appendText("e");
 	}
+	
+	public void eCalc() {
+	    double e = 2.7182818284590452353602874713527;
+	}
+	
 	public void rand(){
 		input.appendText("RAND");
 	}
@@ -112,17 +134,41 @@ public class Controller {
 		input.appendText("^");
 	}
 	
+	public void powCalc() {
+	    double i = 0;
+	    double e = 0;
+	    Math.pow(i, e);
+	}
+	
 	public void root(){
 		input.appendText("√(");
+	}
+	
+	public void rootCalc() {
+	    double i = 0;
+	    Math.sqrt(i);
 	}
 	
 	public void factorial(){
 		input.appendText("!");
 	}
 	
+	public double factorialCalc() {
+	    int i = 0;
+	    while(i > 0) {
+	        i *= (i - 1);
+	     }
+	     return i;
+	}
+	
 	public void ln(){
 		input.appendText("ln(");
 	}
+	public double lnCalc() {
+	    double i = 0;
+	    i = (-Math.log(1 - i))/ i;
+	    return i;
+	 }
 	
 	//probably need a switcher between radians and degrees
 	
