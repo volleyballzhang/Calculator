@@ -209,7 +209,6 @@ public class Controller implements Initializable{
 		double x = Double.parseDouble(this.prop1Int_x.getText());
 		double n = Double.parseDouble(this.prop1Int_n.getText());
 		double cl = Double.parseDouble(this.prop1Int_cl.getText());
-		if(cl>1)cl/=100;
 		double phat = x/n;
 		NormalDistribution normal = new NormalDistribution();
 		double zstar = normal.inverseCumulativeProbability(cl + (1-cl)/2);
