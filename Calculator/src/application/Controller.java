@@ -43,12 +43,15 @@ public class Controller {
 	public void add(){
 		input.appendText("+");
 	}
+	
 	public void mod(){
 		input.appendText("%");
 	}
+	
 	public void perm(){
 		input.appendText(" nPr ");
 	}
+	
 	public void comp(){
 		input.appendText(" nCr ");
 	}
@@ -73,13 +76,29 @@ public class Controller {
 		input.appendText("sin(");
 	}
 	
+	private void sinCalc() {
+	    double i = 0;
+	    Math.sin(i);
+	}
+	
 	public void cos(){
 		input.appendText("cos(");
+	}
+	
+	private void cosCalc() {
+	    double i = 0;
+	    Math.cos(i);
 	}
 	
 	public void tan(){
 		input.appendText("tan(");
 	}
+	
+	private void tanCalc() {
+	    double i = 0;
+	    Math.tan(i);
+	}
+	
 	public void arcsin(){
 		input.appendText("arcsin(");
 	}
@@ -96,7 +115,7 @@ public class Controller {
 		input.appendText("log(");
 	}
 	
-	public void logCalc() {
+	private void logCalc() {
 	    double i = 0;
 	    Math.log(i);
 	}
@@ -105,16 +124,17 @@ public class Controller {
 		input.appendText("abs(");
 	}
 	
-	public void absCalc() {
+	private void absCalc() {
 	    double i = 0;
 	    if(i < 0) i *= -1;
 	    else i = i;
 	}
+	
 	public void pi(){
 		input.appendText("π");
 	}
 	
-	public void piCalc() {
+	private void piCalc() {
 	    double pi = 3.14159265359;
 	}
 	
@@ -122,7 +142,7 @@ public class Controller {
 		input.appendText("e");
 	}
 	
-	public void eCalc() {
+	private void eCalc() {
 	    double e = 2.7182818284590452353602874713527;
 	}
 	
@@ -134,7 +154,7 @@ public class Controller {
 		input.appendText("^");
 	}
 	
-	public void powCalc() {
+	private void powCalc() {
 	    double i = 0;
 	    double e = 0;
 	    Math.pow(i, e);
@@ -144,7 +164,7 @@ public class Controller {
 		input.appendText("√(");
 	}
 	
-	public void rootCalc() {
+	private void rootCalc() {
 	    double i = 0;
 	    Math.sqrt(i);
 	}
@@ -153,7 +173,7 @@ public class Controller {
 		input.appendText("!");
 	}
 	
-	public double factorialCalc() {
+	private double factorialCalc() {
 	    int i = 0;
 	    while(i > 0) {
 	        i *= (i - 1);
@@ -164,7 +184,8 @@ public class Controller {
 	public void ln(){
 		input.appendText("ln(");
 	}
-	public double lnCalc() {
+	
+	private double lnCalc() {
 	    double i = 0;
 	    i = (-Math.log(1 - i))/ i;
 	    return i;
