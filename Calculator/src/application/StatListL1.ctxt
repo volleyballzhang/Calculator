@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=list
-comment0.target=StatListL1(double)
-comment1.params=
-comment1.target=javafx.beans.property.DoubleProperty\ l1Property()
-comment2.params=
-comment2.target=double\ getl1()
-numComments=3
